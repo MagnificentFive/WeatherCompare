@@ -1,26 +1,29 @@
 
 <!-- ABOUT THE PROJECT -->
-## Welcome to WeatherCompare! 
-Compare your local weather with global conditions. See how your hometown stacks up against other regions.
+## Welcome to WebInsight! 
+
+Web Development News: Stay informed with the latest updates, trends, and news in the world of web development.
+CSS Insights: Explore in-depth coverage of new features and techniques in CSS to enhance your styling skills and stay ahead in design trends.
+Real-Time Weather Updates: Get instant and accurate weather information, adding a practical and dynamic element to the site for users with diverse interests.
 
 TODO:
-* Local vs. Global: Easily compare your local weather with global conditions. See how your hometown stacks up against other regions
-* Side-by-Side Visuals: Simple charts and visuals help you quickly understand the differences in temperature, precipitation, and more.
-* Simple charts and visuals help you quickly understand the differences in temperature, precipitation, and more.
+Setup Flask Project:
+    Design the Web Pages:
+        Integrate News API for Web Development Updates:
+            Implement Weather API Integration:
+                Create a Telegram Bot:
+                    Dockerize Flask App:
 
 ### Built With
 
 This section should list any major frameworks/libraries used 
 <!-- ROADMAP -->
 
-## Roadmap
+<!-- ## Roadmap
 - [x] placeholder
-- [x] placeholder
 - [ ] placeholder
-- [ ] placeholder
-- [ ] placeholder
-    - [ ] Chinese
-    - [ ] Japanese
+    - [ ] placeholder -->
+
 
 <!-- CONTACT -->
 ## Contact
