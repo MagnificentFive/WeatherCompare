@@ -15,8 +15,8 @@ Setup Flask Project:
                     Dockerize Flask App:
 
 ### Built With
-
-This section should list any major frameworks/libraries used 
+ Python, Flask, SQLite, Docker
+ 
 <!-- ROADMAP -->
 
 <!-- ## Roadmap
