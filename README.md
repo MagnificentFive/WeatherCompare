@@ -7,12 +7,15 @@ CSS Insights: Explore in-depth coverage of new features and techniques in CSS to
 Real-Time Weather Updates: Get instant and accurate weather information, adding a practical and dynamic element to the site for users with diverse interests.
 
 TODO:
-Setup Flask Project:
-    Design the Web Pages:
-        Integrate News API for Web Development Updates:
-            Implement Weather API Integration:
-                Create a Telegram Bot:
-                    Dockerize Flask App:
+<ul>
+    <li>Setup Flask Project;</li>
+    <li>Design the Web Pages;</li>
+    <li>Integrate News API for Web Development Updates;</li>
+    <li>Implement Weather API Integration;</li>
+    <li>Create a Telegram Bot;</li>
+    <li>Dockerize Flask App;</li>
+</ul>
+
 
 ### Built With
  Python, Flask, SQLite, Docker
