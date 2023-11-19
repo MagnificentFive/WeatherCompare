@@ -28,4 +28,4 @@ Setup Flask Project:
 <!-- CONTACT -->
 ## Contact
 
-https://t.me/zetqr
+<a href="https://t.me/zetqr">Mikhail Kalandarishvili</a>
