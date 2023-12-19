@@ -37,6 +37,7 @@ cache = Cache(app)
 scheduler.init_app(app)
 scheduler.start()
 
+
 @app.route('/news')
 def news():
     try:
@@ -54,7 +55,6 @@ def news():
         return jsonify(success=False)
 
 
-
 @app.route('/weather/<string:city>', methods=('GET',))
 def weather(city):
     try:
@@ -63,7 +63,6 @@ def weather(city):
     except Exception as e:
         logger.error(f'Не удалось получить погоду для города {city}. Ошибка: {e}')
         return jsonify(success=False)
-
 
 if __name__ == '__main__':
     app.run()
