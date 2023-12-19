@@ -10,9 +10,7 @@ from models import db, News
 from config import *
 from api_clients import get_weather
 
-
 logger = logging.getLogger(__name__)
-
 
 # flask app
 config = {
@@ -36,7 +34,6 @@ cache = Cache(app)
 scheduler.init_app(app)
 scheduler.start()
 
-
 @app.route('/news')
 def news():
     try:
@@ -52,6 +49,7 @@ def news():
     except Exception as e:
         logger.error(f'Не удалось получить новости. Ошибка: {e}')
         return jsonify(success=False)
+
 
 
 @app.route('/weather/<string:city>', methods=('GET',))
