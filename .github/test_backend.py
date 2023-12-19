@@ -1,5 +1,3 @@
-# tests/test_news.py
-
 import unittest
 import requests_mock
 from backend.test_news import get_news
