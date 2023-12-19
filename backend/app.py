@@ -22,14 +22,12 @@ config = {
     'CACHE_DEFAULT_TIMEOUT': 300,
 }
 
-
 app = Flask(__name__)
 app.config.from_mapping(config)
 
 # db and migration
 db.init_app(app)
 migrate = Migrate(app, db)
-
 
 # caching
 cache = Cache(app)
