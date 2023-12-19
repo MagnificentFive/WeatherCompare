@@ -30,6 +30,7 @@ app.config.from_mapping(config)
 db.init_app(app)
 migrate = Migrate(app, db)
 
+
 # caching
 cache = Cache(app)
 
