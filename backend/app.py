@@ -30,6 +30,7 @@ app.config.from_mapping(config)
 db.init_app(app)
 migrate = Migrate(app, db)
 
+
 # caching
 cache = Cache(app)
 
@@ -63,6 +64,7 @@ def weather(city):
     except Exception as e:
         logger.error(f'Не удалось получить погоду для города {city}. Ошибка: {e}')
         return jsonify(success=False)
+
 
 if __name__ == '__main__':
     app.run()
