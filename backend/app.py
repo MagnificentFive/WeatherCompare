@@ -10,7 +10,9 @@ from models import db, News
 from config import *
 from api_clients import get_weather
 
+
 logger = logging.getLogger(__name__)
+
 
 # flask app
 config = {
@@ -19,6 +21,7 @@ config = {
     'CACHE_TYPE': 'SimpleCache',
     'CACHE_DEFAULT_TIMEOUT': 300,
 }
+
 
 app = Flask(__name__)
 app.config.from_mapping(config)
