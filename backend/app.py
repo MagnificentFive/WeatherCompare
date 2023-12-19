@@ -20,6 +20,7 @@ config = {
     'CACHE_DEFAULT_TIMEOUT': 300,
 }
 
+
 app = Flask(__name__)
 app.config.from_mapping(config)
 
