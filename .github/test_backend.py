@@ -1,29 +1,26 @@
-# tests/test_backend.py
+# tests/test_news.py
 
 import unittest
-from unittest.mock import patch, MagicMock
+import requests_mock
 from backend.test_news import get_news
 
-class TestBackend(unittest.TestCase):
+class TestNews(unittest.TestCase):
 
-    @patch('requests.get')
-    def test_get_news(self, mock_get):
-        # Mock the response from the news API
-        mock_response = {
-            'status': 'ok',
-            'articles': [
-                {'title': 'Test Article 1'},
-                {'title': 'Test Article 2'}
-            ]
-        }
-        mock_get.return_value = MagicMock()
-        mock_get.return_value.json.return_value = mock_response
+    def test_get_news(self):
+        with requests_mock.mock() as m:
+            
+            mock_response = {
+                'status': 'ok',
+                'articles': [
+                    {'title': 'Test Article 1'},
+                    {'title': 'Test Article 2'}
+                ]
+            }
+            m.get('https://newsapi.org/v2/top-headlines', json=mock_response)
 
-        # Call the function that fetches news articles
-        result = get_news()
+            result = get_news()
 
-        # Assert the result matches the expected data
-        self.assertEqual(result, ['Test Article 1', 'Test Article 2'])
+            self.assertEqual(result, ['Test Article 1', 'Test Article 2'])
 
 if __name__ == '__main__':
     unittest.main()
