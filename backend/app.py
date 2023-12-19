@@ -10,9 +10,7 @@ from models import db, News
 from config import *
 from api_clients import get_weather
 
-
 logger = logging.getLogger(__name__)
-
 
 # flask app
 config = {
