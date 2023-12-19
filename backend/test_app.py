@@ -2,15 +2,19 @@ import unittest
 from flask_testing import TestCase
 from app import app, db, News
 
+
 class TestApp(TestCase):
+
 
     def create_app(self):
         app.config['TESTING'] = True
         app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///:memory:'
         return app
 
+
     def setUp(self):
         db.create_all()
+
 
         sample_news = News(
             dt='2022-01-01',
