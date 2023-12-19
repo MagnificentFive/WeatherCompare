@@ -1,9 +1,11 @@
+# .github/workflows/test.yml
+
 name: Test
 
 on:
   push:
     branches:
-      - main
+      - test-api-auto
 
 jobs:
   test:
@@ -12,6 +14,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+        with:
+          ref: backend  # Specify the branch name where test_news.py is located
 
       - name: Set up Python
         uses: actions/setup-python@v2
@@ -25,6 +29,6 @@ jobs:
 
       - name: Run tests
         run: |
-          python -m unittest apiTest.py
+          python -m unittest tests/test_backend.py
         env:
           NEWS_API_KEY_TEST: ${{ secrets.NEWS_API_KEY_TEST }}
