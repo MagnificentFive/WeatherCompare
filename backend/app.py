@@ -21,6 +21,7 @@ config = {
 }
 
 
+
 app = Flask(__name__)
 app.config.from_mapping(config)
 
